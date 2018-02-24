@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link class="fondo" rel="stylesheet" type="text/css" href="../formtest/css/normalize.css">
     <link class="fondo" rel="stylesheet" type="text/css" href="../formtest/css/style.css">
     <title>Solicitudes Latam</title>
   </head>
@@ -21,7 +22,7 @@
           </div>
         </div>
       </div class="row">
-        <div class="col-lg-4 m-auto">
+        <div class="col-4 m-auto">
           <form action="https://api.formbucket.com/f/buk_Iz5BKUJKnT8dFsj6CFGBbfou" method="post" target="_blank">
              
           <div class="form-group">
@@ -54,71 +55,47 @@
             </select>
           </div>
 
-          <input type="date" name="birthday">
-          <input type="time" name="game-time">
-          <input type="email" name="email-address">
-          <input type="url" name="website">
-          <input type="number" name="cost">
-          <input type="tel" name="phone-number">
-
-
           <div class="form-group">
-            <label for="exampleInputEmail1">Ingrese su correo corporativo</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo" name="email">
+            <label for="emailcamp">Ingrese su correo corporativo</label>
+            <input type="email" class="form-control" id="emailcamp" aria-describedby="emailHelp" placeholder="Correo" name="email">
           </div>
 
           <div class="form-group">
-            <label for="exampleFormControlSelect2">Seleccione el dia a solicitar</label>
-            <select multiple class="form-control" id="exampleFormControlSelect2" name="dia_solicitado">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="turno1" name="turno1">
-            <label class="form-check-label" for="turno1">Libre</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="turno2" name="turno2">
-            <label class="form-check-label" for="turno2">DM43</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="turno3" name="turno3">
-            <label class="form-check-label" for="turno3">DT123</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="turno4" name="turno4">
-            <label class="form-check-label" for="turno4">DN</label>
-          </div>
-
-          <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="turno5" name="turno5">
-            <label class="form-check-label" for="turno5">Pacha</label>
-          </div>
+            <label>Seleccione el dia a solicitar</label>
+              <input type="date" class="form-control" name="fecha_de_solicitud_1">
+              <select class="form-control col-sm-3 col-md-3 col-lg-3" id="" name="turno_opcion1">
+                <option>Libre</option>
+                <option>Rest</option>
+                <option>DM43</option>
+                <option>DT123</option>
+                <option>DN</option>
+                <option>ADM</option>
+              </select>
+            </div>
           
             <div class="form-group">
               <label for="issuelist">Seleccione un motivo en la lista</label>
               <select class="form-control" id="issuelist" name="motivo_de la solicitud">
-              <option>Porque Aja</option>
-              <option>Porque si</option>
-              <option>Que le imprta</option>
-              <option>porque quise</option> 
+              <option>Cita medica</option>
+              <option>Cumpleaños</option>
+              <option>Viaje</option>
+              <option>Otro</option> 
               </select>
             </div>
-            
-            
+              
           <div class="form-group">
             <label for="exampleFormControlTextarea1">Ingrese el movito de la solicitud</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="motivo_de_la_solicitud"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+
+          <div class="form-group">
+            <input type="file" name="file">
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-light mt-3">Enviar Solicitud</button>
+          </div>
+          
         
 
         </form>
