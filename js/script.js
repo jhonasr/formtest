@@ -1,16 +1,16 @@
 //form
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyjQF8gPZVPK5EjhJ6sEfPbwe3IGDRqb5B7FGVaBzB1XnHAh1c/exec'
-  const form = document.forms['submit-to-google-sheet']
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyjQF8gPZVPK5EjhJ6sEfPbwe3IGDRqb5B7FGVaBzB1XnHAh1c/exec'
+const form = document.forms['submit-to-google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
-  })
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => console.log('Success!', response))
+  .catch(error => console.error('Error!', error.message))
+})
 
   // Example starter JavaScript for disabling form submissions if there are invalid fields
-  (function() {
+  function() ({
     'use strict';
     window.addEventListener('load', function() {
       // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -28,6 +28,16 @@
     }, false);
   })();
 //open tab
-  function openWin() {
-    window.open('https://www.google.com')
-  }
+function openWin() {
+  window.open('../formtest/thanks.html')
+}
+
+var timeInterval = 1000;
+
+function showCurrentTime(){
+  var timestamp = getCurrentTimestamp();
+
+  var timestampString = buildTimestampString(timestamp);
+
+  appendTimestamp(timestampString, timestamp);   
+};
