@@ -28,6 +28,7 @@
           <div class="form-group">
             <label for="exampleFormControlSelect1">Escoja su nombre en la lista</label>
             <select class="form-control" id="exampleFormControlSelect1" name="despachador">
+              <option></option>
               <option>RAMOS BARRIOS CRHISTIAN CAMILO</option>
               <option>FERIA VALENCIA JOHN MARIO</option>
               <option>ECHEVERRY BOTERO CARLOS HUMBERTO</option>
@@ -65,8 +66,8 @@
             <div class="row">
               <div class="col-lg-3 mb-1">
                 <label>Dia 1</label>
-                <input type="date" class="fecha" name="fecha_de_solicitud_1">
-                <select class="form-control" id="" name="turno_opcion1">
+                <input type="date" class="form-control fecha" name="fecha_1">
+                <select class="form-control" id="" name="turno_fecha1">
                   <option>Libre</option>
                   <option>Rest</option>
                   <option>DM43</option>
@@ -78,8 +79,8 @@
               
               <div class="col-lg-3 mb-1">
                 <label>Dia 2</label>
-                <input type="date" class="fecha" name="fecha_de_solicitud_x">
-                <select class="form-control" id="" name="turno_opcionx">
+                <input type="date" class="form-control fecha" name="fecha_2">
+                <select class="form-control" id="" name="turno_fecha2">
                   <option>Libre</option>
                   <option>Rest</option>
                   <option>DM43</option>
@@ -91,8 +92,8 @@
 
               <div class="col-lg-3 mb-1">
                 <label>Dia 3</label>
-                <input type="date" class="fecha" name="fecha_de_solicitud_x">
-                <select class="form-control" id="" name="turno_opcionx">
+                <input type="date" class="form-control fecha" name="fecha_3">
+                <select class="form-control" id="" name="turno_fecha3">
                   <option>Libre</option>
                   <option>Rest</option>
                   <option>DM43</option>
@@ -104,8 +105,8 @@
 
                 <div class="col-lg-3">
                 <label>Dia 4</label>
-                <input type="date" class="fecha" name="fecha_de_solicitud_x">
-                <select class="form-control" id="" name="turno_opcionx">
+                <input type="date" class="form-control fecha" name="fecha_4">
+                <select class="form-control" id="" name="turno_fecha4">
                   <option>Libre</option>
                   <option>Rest</option>
                   <option>DM43</option>
@@ -119,7 +120,7 @@
 
           <div class="form-group">
             <label for="issuelist">Seleccione un motivo en la lista</label>
-            <select class="form-control" id="issuelist" name="motivo_de_la_solicitud1">
+            <select class="form-control" id="issuelist" name="motivo1">
               <option>Cita medica</option>
               <option>Cumpleaños</option>
               <option>Viaje</option>
@@ -129,13 +130,13 @@
 
           <div class="form-group">
             <label for="exampleFormControlTextarea1" id="testo">Ingrese movito u observacion de la solicitud</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="motivo_de_la_solicitud2"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="motivo2"></textarea>
           </div>
 
           <div class="form-group">
             <button type="submit" name="summit" id="submit-form" class="btn btn-light mt-3" onclick="openWin()">Enviar Solicitud</button>
           </div>
-
+        <p>Date/Time: <span id="datetime" name="datetime"></span></p>
         </form>
         
         
