@@ -38,9 +38,10 @@ html {
 
 .fecha {
 	padding: 5px;
+	width: 200px;
 }
 .turn {
-	width: 150px;
+	width: 200px;
 }
 
 /*Thanks page */
