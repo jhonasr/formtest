@@ -9,15 +9,21 @@ form.addEventListener('submit', e => {
   .catch(error => console.error('Error!', error.message))
 })
 
-  $( function() {
-    $( "#datepicker" ).datepicker();
-  } );
-
-
 //open tab
 function openWin() {
   window.open('../formtest/thanks.html')
 }
+/*
+window.setInterval(ut, 1000);
+function ut() {
+  var d = new Date();
+  document.getElementById("time").innerHTML = d.toLocaleTimeString();
+  document.getElementById("date").innerHTML = d.toLocaleDateString();
+}
+*/
 
-var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +"."+ (("0"+(dt.getMonth()+1)).slice(-2)) +"."+ (dt.getFullYear()) +" "+ (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+function test() {
+  x = Date()
+  document.getElementById("datepicker").value = x;
+};
+test();
