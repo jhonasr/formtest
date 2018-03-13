@@ -37,7 +37,10 @@ html {
 }
 
 .fecha {
-	padding: 7px;
+	padding: 5px;
+}
+.turn {
+	width: 150px;
 }
 
 /*Thanks page */
